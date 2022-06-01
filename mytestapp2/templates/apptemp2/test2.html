@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+</head>
+
+<body>
+    <h1>testing...... django.... project</h1>
+    <hr>
+    <img src="{% static 'images/download.jpg' %}" alt="" width="400">
+    <p>this is the header............</p>
+
+    {% block content %} {% endblock %}
+
+    <a href="{% url 'hello' %}">click to view home</a>
+    <a href="{% url 'hello1' %}">click to view page1</a>
+    <a href="{% url 'hello2' %}">click to view page2</a>
+    <a href="{% url 'hello3' %}">click to view page3</a>
+    <a href="{% url 'hello4' %}">click to view page4</a>
+    <hr>
+    <p>this is the footer</p>
+    <p>this is the footer</p>
+    <p>this is the footer</p>
+
+
+
+
+
+
+</body>
+
+</html>
