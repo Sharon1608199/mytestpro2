@@ -10,12 +10,32 @@
 </head>
 
 <body>
+
+    <div class="container">
+        <div class="row" style="background-color:grey; ">
+            <div>
+                <label for="">Design</label>
+            </div>
+            <div class="">
+                <ul style="list-style-type: none; white-space:nowrap;">
+                    <li style="display:inline-block ;">Home</li>
+                    <li>About</li>
+                    <li>Product</li>
+                    <li>Contact</li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
     <h1>testing...... django.... project</h1>
     <hr>
     <img src="{% static 'images/download.jpg' %}" alt="" width="400">
     <p>this is the header............</p>
 
     {% block content %} {% endblock %}
+
+
 
     <a href="{% url 'hello' %}">click to view home</a>
     <a href="{% url 'hello1' %}">click to view page1</a>
